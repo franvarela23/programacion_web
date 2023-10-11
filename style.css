@@ -1,0 +1,48 @@
+body, main {
+        min-height: 100vh;
+        margin: 0;
+        padding: 0;
+        }
+main {
+    background-color:cornsilk;
+}
+
+.navbar {
+    position: sticky;
+    top:0 ;
+    width: 100%;
+    z-index:1000;}
+
+
+
+#carrouselPersonalizado{
+    min-height: 700px;
+}
+#carrouselPersonalizadouno{
+    min-height:100px;
+}
+
+.custom-image {
+    width: 100%; 
+    height: auto;
+}
+.custom-image1 {
+    width: 150%; 
+    height: 54.55vh;
+}
+
+.video-container {
+    position: relative;
+    width: 100%; 
+    height: 50vh;
+    overflow: hidden;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 85%;
+    object-fit: cover;
+}
