@@ -33,10 +33,10 @@ body, main {
     width: 40px;
     height: 150px;
     margin-top: 33px;
-    position: center;
-    margin-left: auto;
-    margin-right: auto;
+    margin: 0 auto; 
+    display: block; 
 }
+
 
 .video-container {
     position: relative;
@@ -58,16 +58,51 @@ video {
 
 .nombre {
     margin-top:40px ;
-    font-size: 50px;
+    font-size: 40px;
     color: rgb(69, 69, 69);
-    position:center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    text-align: center;
 }
 
 .habilidades {
     font-size: 30px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
     color: rgba(112, 112, 112, 0.693);
+    text-align: center;
 }
 
+.rama_y_denis{
+    width: 390px;
+    height: 300px;
+    margin-top: 20px;
+    margin-bottom: 100px ;
+    position: center;
+    margin: 0 auto;
+    display: block;
+}
+@media (max-width: 768px) {
+    .nombre {
+        font-size: 20px;
+    }
+
+    .habilidades {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .video-container {
+        height: 35vh;
+    }
+
+    .nombre {
+        font-size: 18px;
+    }
+
+    .habilidades {
+        font-size: 14px;
+    }
+}
 /*--Carpeta Tecnica--*/ 
 #planos {
     margin-top: 50px;
@@ -75,13 +110,12 @@ video {
 }
 
 .planos-style {
-    border: thin solid;
-    color: darkgrey;
+    border: 1px solid darkgrey;
     opacity: 0.7;
     padding-top: 40px;
-    padding-bottom: 30px;
+    padding: 40px 20px;
     background-color: gainsboro;
-    border-radius: 0.5%;
+    border-radius: 5px;
 }
 
 .about-info {
@@ -93,30 +127,41 @@ video {
     margin-top: 50px;
     padding: 20px;
 }
+.portfolio-item {
+    width: 33.33%; 
+    padding: 10px; 
+    box-sizing: border-box; 
+}
+
+.portfolio-item img {
+    width: 100%; 
+    height: auto;
+}
 
 .text-style {
     margin-top: 50px;
 }
 
-
-
-/*--renders--*/ 
-
-.renders {
-    text-align: center;
+@media (max-width: 768px) {
+    .about-info {
+        font-size: 16px;
+    }
 }
 
+/*--renders--*/ 
 .dibujos {
-    
     display: flex;
+    flex-wrap: wrap; 
     justify-content: space-between;
     align-items: center;
+    margin: 0 -5px; 
 }
 
 .card {
     flex: 1;
     overflow: hidden;
     transition: 0.5s;
+    margin: 0 5px;
 }
 
 .card img {
@@ -124,6 +169,7 @@ video {
     filter: grayscale(1);
     padding: 5px;
     border-radius: 10px;
+    width: 100%; 
 }
 
 .card:hover {
@@ -137,9 +183,9 @@ video {
 }
 
 .fotito {
-    width: 20px; /* Modifica el tamaño según tus necesidades */
+    width: 20px; 
     height: 20px;
-    margin-right: 10px; /* Espacio entre la imagen y el texto del enlace */
+    margin-right: 10px;
 }
 
 .diseño {
@@ -150,7 +196,7 @@ video {
     max-width: 100%;
     font-weight: bold;
     font-size: 30px;
-  }
+}
 
 .diseño1 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
@@ -158,7 +204,25 @@ video {
     margin: 0 auto; 
     max-width: 100%;
     font-size: 18px;
-  }
+}
+
+@media (max-width: 768px) {
+    .dibujos {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .card {
+        flex: none; 
+        margin: 10px 0; 
+    }
+    .card img {
+        filter: none;
+    }
+    .fotito {
+        margin-right: 5px;
+    }
+}
 
 
  
