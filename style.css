@@ -110,12 +110,8 @@ video {
 }
 
 .planos-style {
-    border: 1px solid darkgrey;
-    opacity: 0.7;
     padding-top: 40px;
     padding: 40px 20px;
-    background-color: gainsboro;
-    border-radius: 5px;
 }
 
 .about-info {
@@ -136,6 +132,7 @@ video {
 .portfolio-item img {
     width: 100%; 
     height: auto;
+    border-top: 1px solid rgb(139, 139, 139);
 }
 
 .text-style {
