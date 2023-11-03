@@ -42,8 +42,12 @@ footer {
 /*--principal--*/  
 #carrouselPersonalizado {
     min-height: 700px;
+    flex:7;
 }
-
+.column3{
+    flex:5;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+}
 #carrouselPersonalizadouno {
     min-height: 100px;
 }
