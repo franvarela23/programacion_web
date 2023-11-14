@@ -39,6 +39,8 @@ footer {
    }
 
 
+
+
 /*--principal--*/  
 #carrouselPersonalizado {
     min-height: 700px;
@@ -107,29 +109,36 @@ video {
     margin: 0 auto;
     display: block;
 }
+
 @media (max-width: 768px) {
-    .nombre {
-        font-size: 25px;
+    #carrouselPersonalizado {
+        min-height: 400px;
     }
 
-    .habilidades {
-        font-size: 19px;
-    }
-}
-
-@media (max-width: 576px) {
     .video-container {
         height: 30vh;
     }
 
-    .nombre {
-        font-size: 24px;
+    .row {
+        flex-direction: column;
     }
 
-    .habilidades {
-        font-size: 20px;
+    .logomula {
+        width: 30px;
+        height: 100px;
+    }
+
+    .rama_y_denis {
+        width: 250px;
+        height: 200px;
+    }
+
+    .nombre {
+        margin-top: 20px;
     }
 }
+
+
 /*--Carpeta Tecnica--*/ 
 #planos {
     margin-top: 50px;
@@ -168,9 +177,23 @@ video {
 
 @media (max-width: 768px) {
     .about-info {
-        font-size: 15px;
+        font-size: 22px;
+    }
+
+    #planos,
+    #portfolio {
+        padding: 10px;
+    }
+
+    .portfolio-item {
+        width: 80%;
+        position:center;
+        margin-left: 57px;
     }
 }
+
+
+
 
 /*--renders--*/ 
 .dibujos {
