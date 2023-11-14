@@ -168,7 +168,7 @@ video {
 
 @media (max-width: 768px) {
     .about-info {
-        font-size: 22px;
+        font-size: 15px;
     }
 }
 
@@ -251,6 +251,7 @@ video {
 
  
 /*--contactanos--*/
+/* Estilos base para pantallas grandes */
 .fondopantalla {
     position: absolute;
     top: 0;
@@ -281,33 +282,65 @@ video {
 }
 
 .columna img {
-    width:auto; 
+    width: auto;
     height: 150px;
-    margin-top: 85px; 
+    margin-top: 85px;
 }
 
 .redes-sociales {
     color: beige;
-    margin-top: 70px; 
+    margin-top: 70px;
     margin-left: 30px;
     text-align: justify;
 }
 
-.small-icon {
+.small-icon, .icon {
     width: 20px;
-    height: 20px;
-    margin-right: 10px; 
-}
-
-.icon{
-    width: 20px;
-    height: 15px;
+    height: auto;
     margin-right: 10px;
 }
 
-#color{
+#color {
     background-color: transparent;
 }
+
+/* Ajustes para pantallas medianas */
+@media (max-width: 834px), (orientation: landscape) {
+    .columna img {
+        height: 120px; 
+        margin-top: 100px; 
+    }
+}
+@media (max-width: 768px), (min-width: 576px) {
+    .columna {
+        text-align: center;
+    }
+    .columna img {
+        height: 120px; 
+        margin-top: 50px;
+        margin-right:  20px;  
+    }
+    .redes-sociales {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .columna img {
+        height: 100px;
+        margin-top: 50px;
+        margin-left:10px ;
+    }
+
+    .small-icon, .icon {
+        width: 15px;
+        height: auto;
+        margin-right: 5px;
+    }
+}
+
 
 /* direccion y contruccion */
 
@@ -406,13 +439,13 @@ video {
 
     .columnasgallery {
         flex: 1;
-        order: 1; /* Cambiar el orden para que esté arriba de las fotos */
+        order: 1;
     }
 
     .columnastexto {
         flex: 1;
         margin-right: 0;
-        order: 2; /* Cambiar el orden para que esté debajo de las fotos */
+        order: 2; 
     }
 
     .image-container img {
@@ -423,11 +456,6 @@ video {
     .contenedor-principal {
         padding: 20px;
         display: flex;
-    }
-
-    .columnasgallery {
-        flex: 7;
-        order: 1;
     }
 
     .columnastexto {
@@ -441,6 +469,13 @@ video {
         margin-right: 60px;
         order: 2;
     }
+
+    .columnasgallery {
+        flex: 7;
+        order: 1;
+    }
+
+    
 
     .image-container {
         display: flex;
