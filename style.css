@@ -3,24 +3,24 @@ body, main {
     margin: 0;
     padding: 0;
     position:relative;
-    background-color: cornsilk;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    background-color: rgb(244, 244, 244);
+    font-family: 'century gotic','cera pro';
 }
 
 
 .navbar {
     position: sticky;
     top: 0;
-    background-color: cornsilk;
+    background-color: rgb(244, 244, 244);
     width: 100%;
     z-index: 1000;
 }
 .dropdown-menu{
-    background-color: rgba(255, 248, 220, 0.888);
+    background-color: rgb(244, 244, 244);
 }
 
 footer {
-    background-color: #000;
+    background-color:  rgb(54, 54, 54);;
     text-align: center;
     color: ghostwhite;
     padding: 5px;
@@ -28,7 +28,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-family: 'century gotic','cera pro';
 }
 
 
@@ -46,7 +46,7 @@ footer {
 }
 .column3{
     flex:5;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-family: 'century gotic','cera pro';
 }
 #carrouselPersonalizadouno {
     min-height: 100px;
@@ -85,17 +85,17 @@ video {
 
 
 .nombre {
-    margin-top:40px ;
-    font-size: 40px;
-    color: rgb(69, 69, 69);
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    margin-top:50px ;
+    font-size: 50px;
+    color: rgb(54, 54, 54);
+    font-family: 'century gotic','cera pro';
     text-align: center;
 }
 
 .habilidades {
-    font-size: 30px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-    color: rgba(112, 112, 112, 0.693);
+    font-size: 40px;
+    font-family: 'century gotic','cera pro';
+    color: #646464b1;
     text-align: center;
 }
 
@@ -109,11 +109,11 @@ video {
 }
 @media (max-width: 768px) {
     .nombre {
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .habilidades {
-        font-size: 16px;
+        font-size: 19px;
     }
 }
 
@@ -123,11 +123,11 @@ video {
     }
 
     .nombre {
-        font-size: 18px;
+        font-size: 24px;
     }
 
     .habilidades {
-        font-size: 14px;
+        font-size: 20px;
     }
 }
 /*--Carpeta Tecnica--*/ 
@@ -142,7 +142,7 @@ video {
 }
 
 .about-info {
-    font-size: 22px;
+    font-size: 30px;
     color: #000;
 }
 
@@ -168,7 +168,7 @@ video {
 
 @media (max-width: 768px) {
     .about-info {
-        font-size: 16px;
+        font-size: 22px;
     }
 }
 
@@ -214,20 +214,20 @@ video {
 
 .diseño {
     padding: 10px;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-family: 'century gotic','cera pro';
     text-align: center; 
     margin: 0 auto; 
     max-width: 100%;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 40px;
 }
 
 .diseño1 {
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
+    font-family: 'century gotic','cera pro';
     text-align: center; 
     margin: 0 auto; 
     max-width: 100%;
-    font-size: 18px;
+    font-size: 28px;
 }
 
 @media (max-width: 768px) {
@@ -311,88 +311,48 @@ video {
 
 /* direccion y contruccion */
 
-.columnasgallery {
+.contenedor-principal {
     display: flex;
 }
 
-.gallery {
-    flex: 6;
-    display: grid;
-    grid-gap: 30px;
-    max-width: 80vw;
-    width: 100%;
-    justify-content: left;
-    margin-left: 185px;
-    margin-bottom: 20px; 
+.columnasgallery {
+    flex: 7;
 }
-.textogaleria {
-    flex: 6;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', 'Geneva', 'Verdana', 'sans-serif';
-    font-size: 20px;
-    float: left;
+
+.columnastexto {
+    margin-top: 10px;
+    flex: 5;
+    font-family: 'century gotic', 'cera pro';
+    font-size: 22px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: left;
-    margin-top: 10px; 
+    align-items: center;
     margin-right: 60px;
 }
 
+.image-container {
+    display: flex;
+    margin-left: 25px;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-right:25px ;
+}
 
-
-.gallery > img {
-    width: 400px;
+.image-container img {
+    width: calc(40% - 7px);
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 50%;
-    transform: translate(var(--_y, 0));
     cursor: pointer;
-    z-index: 0;
-    transition: 0.3s, z-index 0s 0.3s;
-    
+    transition: transform 0.3s;
 }
 
-.gallery img:hover {
-    --_i: 1;
-    z-index: 1;
-    transition: transform 0.2s, clip-path 0.3s, z-index 0s;
+.image-container img:hover {
+    transform: scale(1.1);
 }
 
-.gallery img:hover {
-    --i: 1;
-    z-index: 1;
-    transform: translate(0, 0);
-    clip-path: polygon(50% 50%, calc(50% * var(--i, 0)) calc(100% - 120% * var(--i, 0)), 0 calc(100% - 100% * var(--i, 0)), 0 100%, 100% 100%, 100% calc(100% - 100% * var(--i, 0)), calc(100% - 50% * var(--i, 0)) calc(100% - 120% * var(--i, 0)));
-    --y: calc(1 * var(--g));
-    transition: transform 0.2s, clip-path 0.3s, z-index 0s;
-}
 
-.gallery > img {
-    position: absolute;
-}
 
-.gallery > img:nth-child(1) {
-    clip-path: polygon(50% 50%, calc(50%*var(--_i,0)) calc(120%*var(--_i,0)), 0 calc(100%*var(--_i,0)), 0 0, 100% 0, 100% calc(100%*var(--_i,0)), calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
-    transform: rotate(270deg);
-    --_y: calc(-1*var(--g));
-}
-
-.gallery > img:nth-child(2) {
-    clip-path: polygon(50% 50%, calc(50% * var(--i, 0)) calc(100% - 120% * var(--i, 0)), 0 calc(100% - 100% * var(--i, 0)), 0 100%, 100% 100%, 100% calc(100% - 100% * var(--i, 0)), calc(100% - 50% * var(--i, 0)) calc(100% - 120% * var(--i, 0)));
-    --y: calc(1 * var(--g));
-}
-
-.gallery > img:nth-child(3) {
-    clip-path: polygon(50% 50%, calc(50% * var(--i, 0)) calc(100% - 120% * var(--i, 0)), 0 calc(100% - 100% * var(--i, 0)), 0 100%, 100% 100%, 100% calc(100% - 100% * var(--i, 0)), calc(100% - 50% * var(--i, 0)) calc(100% - 120% * var(--i, 0)));
-    transform: rotate(180deg);
-    --y: calc(1 * var(--g));
-}
-
-.gallery > img:nth-child(4) {
-    clip-path: polygon(50% 50%, calc(50%*var(--_i,0)) calc(120%*var(--_i,0)), 0 calc(100%*var(--_i,0)), 0 0, 100% 0, 100% calc(100%*var(--_i,0)), calc(100% - 50%*var(--_i,0)) calc(120%*var(--_i,0)));
-    transform: rotate(90deg);
-    --_y: calc(-1*var(--g));
-}
 .ultima {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -426,7 +386,7 @@ video {
     left: 0;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.7);
-    color: #fff;
+    color: rgb(255, 255, 255);
     padding: 10px;
     text-align: center;
     opacity: 0;
@@ -436,22 +396,68 @@ video {
 .photo:hover .caption {
     opacity: 1;
 }
-@media (max-width: 768px) {
-    .columnasgallery {
+
+
+@media (max-width: 412px) {
+    .contenedor-principal {
+        padding: 10px;
         flex-direction: column;
     }
 
-    .gallery, .textogaleria {
-        flex: auto;
-        width: 100%;
-        margin: 0;
+    .columnasgallery {
+        flex: 1;
+        order: 1; /* Cambiar el orden para que esté arriba de las fotos */
     }
 
-    .gallery {
-        order: 3;
-       }
+    .columnastexto {
+        flex: 1;
+        margin-right: 0;
+        order: 2; /* Cambiar el orden para que esté debajo de las fotos */
+    }
 
-    .ultima {
-        grid-template-columns: 1fr; 
+    .image-container img {
+        width: 100%;
+    }
+}
+@media (min-width: 820px) {
+    .contenedor-principal {
+        padding: 20px;
+        display: flex;
+    }
+
+    .columnasgallery {
+        flex: 7;
+        order: 1;
+    }
+
+    .columnastexto {
+        flex: 5;
+        font-family: 'century gotic', 'cera pro';
+        font-size: 22px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-right: 60px;
+        order: 2;
+    }
+
+    .image-container {
+        display: flex;
+        margin-left: 25px;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+
+    .image-container img {
+        width: calc(40% - 7px);
+        aspect-ratio: 1;
+        object-fit: cover;
+        cursor: pointer;
+        transition: transform 0.3s;
+    }
+
+    .image-container img:hover {
+        transform: scale(1.1);
     }
 }
