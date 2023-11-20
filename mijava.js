@@ -7,7 +7,7 @@ function cerrarModal() {
     var modal = document.getElementById("modal");
     modal.style.display = "none";
 }
-
+/* BOTON CARRUSEL */
 const imagenes = ["./fotoproyecto.jpg", "./fotoproyecto1.jpg", "./fotoproyecto2.jpg"];
 let indiceActual = 0;
 
