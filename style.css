@@ -158,6 +158,9 @@ video {
 #planos {
     margin-top: 50px;
     padding: 20px;
+    border-bottom: 2px solid #ddd;
+    margin-right: 20px;
+    margin-left:20px ;
 }
 
 .planos-style {
